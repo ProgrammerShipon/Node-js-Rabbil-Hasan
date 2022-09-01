@@ -1,0 +1,22 @@
+{
+  "name": "node-js-rabbil-hasan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node04": "node ./lesson-02/04-My-First-Node-Server-Response/index.js",
+    "node05": "node ./lesson-02/05-http-Protocol-Request-Response-Model/index.js",
+    "node06": "node ./lesson-02/06-Request-Response-Model-Works/index.js",
+    "node07": "node ./lesson-02/07-Understanding-http-Client/index.js",
+    "node08": "node ./lesson-02/08-Understanding-Package-Json/index.js",
+    "node09": "node ./lesson-02/09-Node.js-URL-Module/index.js",
+    "node10": "node ./lesson-02/10-Getting-Started-with-FS-module/index.js",
+    "node11": "node ./lesson-02/11-Synchronous-Asynchronous/index.js",
+    "node14": "node ./lesson-02/14-ready-file-ready-file-ready-html-page/index.js",
+    "node16": "node ./lesson-02/16-file-write-asynchronous/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
