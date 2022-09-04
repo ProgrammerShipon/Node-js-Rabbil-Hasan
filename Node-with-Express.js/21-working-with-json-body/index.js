@@ -1,15 +1,34 @@
   
 var express = require('express');
-app = express();
+var bodyParser = require('body-parser');
 
-//  http://localhost:1010?firstName=Shipon&lastName=Raju
+var app = express();
+
+app.use(bodyParser.json());
+
+/*
+{
+	"name" : "Shipon Hossen Raju",
+	"city": "pabna",
+	"age" : "19"
+} 
+app.post('/', function (req , res) {
+   let JSONData = req.body;
+   let JSONString = JSON.stringify(JSONData);
+   res.send(JSONString);
+})
+*/
+
 app.post('/', function(req, res) {
-   const userName = req.header('userName');
-   const password = req.header('password');
-   res.send(`User Name : ${userName} , Password : ${password}`);
-});
+   const JSONData = req.body;
+   const name = JSONData['name'];
+   const city = JSONData['city'];
+   const age = JSONData['age'];
+   res.send(`Name : ${name} , City : ${city} age : ${age}`)
+})
 
 // Server Start
 app.listen(1010, function () {
    console.log('Server Run Successs.. Port: 1010 ');
 });
+
