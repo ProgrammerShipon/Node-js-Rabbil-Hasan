@@ -3,6 +3,8 @@ var express = require('express');
 
 app = express();
 
+// http://localhost:8080?firstName=Shipon&lastName=Raju
+
 app.get('/', function(req, res) {
 
    let firstName = req.query.firstName;
