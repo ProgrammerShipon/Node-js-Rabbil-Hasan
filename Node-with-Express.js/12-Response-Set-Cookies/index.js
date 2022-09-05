@@ -1,9 +1,10 @@
 var express = require('express');
 app = express();
 
+
 /**
  *  res.send() // response Body ke nidesh kore
- * res.end()   // response ending point
+ *  res.end()   // response ending point
  */
 
 // Redirect
@@ -20,3 +21,4 @@ app.get("/cooki", function(req, res) {
 app.listen(5000, function () {
    console.log('Server Run Successs.. Port: 5000 ');
 });
+
