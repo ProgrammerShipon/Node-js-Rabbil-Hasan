@@ -3,7 +3,9 @@
 /* Libraris */
 
 1. Exprence => npm install 
-2 . Body-Parser => npm install body-parser
+2. Body-Parser => npm install body-parser
+3. Multipart Form Data => npm install --save multer
+4. npm install cors
 
 
 
