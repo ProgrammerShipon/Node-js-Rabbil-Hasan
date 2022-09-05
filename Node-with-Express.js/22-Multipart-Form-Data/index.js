@@ -1,35 +1,20 @@
-  
-var express = require('express');
-var bodyParser = require('body-parser');
 
-var app = express();
+const express = require('express')
+const multer = require('multer')
+const cors = require('cors')
+const multerFn = multer()
+const app = express()
 
-app.use(bodyParser.json());
+app.use(cors())
+app.use(express.json())
 
-/*
-{
-	"name" : "Shipon Hossen Raju",
-	"city": "pabna",
-	"age" : "19"
-} 
-app.post('/', function (req , res) {
-   let JSONData = req.body;
-   let JSONString = JSON.stringify(JSONData);
-   res.send(JSONString);
+app.post('/', multerFn.single('name', 'age', 'city'), function (req, res) {
+  let JSONData = req.body
+  console.log(req.file)
+  res.json(JSONData)
 })
 
-*/
-
-app.post('/', function(req, res) {
-   const JSONData = req.body;
-   const name = JSONData['name'];
-   const city = JSONData['city'];
-   const age = JSONData['age'];
-   res.send(`Name : ${name} , City : ${city} age : ${age}`)
+app.listen(1100, function () {
+  console.log('Server Run Successs.. Port: 1100 ')
 })
-
-// Server Start
-app.listen(1010, function () {
-   console.log('Server Run Successs.. Port: 1010 ');
-});
 
