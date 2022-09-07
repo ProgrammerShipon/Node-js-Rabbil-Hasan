@@ -20,6 +20,8 @@ oi.on ('connection', function (socket) {
    setTimeout (function () {
       socket.send('Learn With Rabbil Hasan (Server --> Client) ')
    }, 5000) 
+
+   // User Disconnected
    socket.on('disconnect', function () {
       console.log('User Disconnected');
    })
