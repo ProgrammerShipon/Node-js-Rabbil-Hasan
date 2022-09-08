@@ -1,0 +1,18 @@
+
+===> Font-end
+=> React install
+=> Socket.io-client
+
+===> Back-end
+=> Express install
+=> Socket.io install
+=> Path --> npm install --save -path 
+
+=> font-end & back-end  connecting ---> npm run build
+
+
+
+
+
+
+
